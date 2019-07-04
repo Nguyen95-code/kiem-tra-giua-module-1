@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let inputData = parseInt(prompt("nhap nam sinh"));
+
+    function displayBirthDate(year) {
+        let birthdate = 2019 - inputData;
+        if (inputData > 2019) {
+            return "khong hop le";
+        } else {
+            return birthdate;
+        }
+    }
+
+    alert(displayBirthDate(inputData));
+
+</script>
+</body>
+</html>
