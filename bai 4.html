@@ -12,7 +12,7 @@
         sum = 0;
         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < arr[i].length; j++) {
-                if (i == j) {
+                if (i === j) {
                     sum += arr[i][j];
                 }
             }
@@ -20,7 +20,8 @@
         return sum;
     }
 
-    alert(sumArr(arr1));
+    let result = sumArr(arr1);
+    alert(result);
 </script>
 </body>
 </html>

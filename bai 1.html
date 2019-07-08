@@ -14,7 +14,8 @@ Enter a number: <input type="number" id="input"/>
             return false;
         }
         for (let i = 2; i < Math.sqrt(num); i++) {
-            if (num % i == 0) {
+            let surplus = num % 2 === 0;
+            if (surplus) {
                 return false;
             }
         }

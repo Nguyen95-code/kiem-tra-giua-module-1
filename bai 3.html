@@ -7,18 +7,23 @@
 <body>
 <script>
 
-    let inputData = parseInt(prompt("nhap nam sinh"));
+    let birthYear = parseInt(prompt("Enter your birth day : "));
 
-    function displayBirthDate(year) {
-        let birthdate = 2019 - inputData;
-        if (inputData > 2019) {
-            return "khong hop le";
+    function calculateAge(birthYear) {
+        let currentYear = new Date().getFullYear();
+        if (birthYear>currentYear) {
+            return -1;
         } else {
-            return birthdate;
+            return currentYear-birthYear;
         }
     }
+    let result=calculateAge(birthYear);
+    if (result===-1){
+        alert("the year is not valid");
+    }else {
+        alert("your old is " + result);
+    }
 
-    alert(displayBirthDate(inputData));
 
 </script>
 </body>
